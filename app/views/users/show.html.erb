@@ -3,3 +3,5 @@
   <%= gravatar_for @user %>
   <%= @user.name %>
 </h1>
+<a href="http://gravatar.com/emails" target="_blank">画像の変更</a>　　　　　　　　
+<%= link_to "プロフィール変更", edit_user_path(current_user) %>

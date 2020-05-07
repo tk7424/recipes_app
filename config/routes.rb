@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
   # get '/recipes', to: '#'
-  # get '/index', to: '#'
+  get '/index', to: 'users#index'
   
   resources :users
 end
