@@ -1,0 +1,8 @@
+<h1>RECIPES</h1>
+
+<h2>ようこそ<%= @user.name %>さん！</h2>
+
+<p>下記のURLをクリックしてアカウントを有効にしてください。</p>
+
+<%= link_to "アカウントを有効にする", edit_account_activation_url(@user.activation_token,
+                                                    email: @user.email) %>
